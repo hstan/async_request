@@ -1,0 +1,18 @@
+{
+  "name": "async_request",
+  "main": "async_request.js",
+  "version": "0.0.1",
+  "authors": [
+    "hstan <tanhanshuo@gmail.com>"
+  ],
+  "description": "jquery http request wrapped",
+  "license": "MIT",
+  "homepage": "http://github.com/hstan/async_request",
+  "dependencies": {
+    "jquery": "~2.1.1"
+  },
+  "ignore": [
+    "**/.*",
+    "bower_components"
+  ]
+}

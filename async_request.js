@@ -1,6 +1,4 @@
-define([
-    'jquery',
-], function($) {
+(function() {
     'use strict';
 
     var allowedDataType = ['json', 'html', 'text'],
@@ -13,7 +11,8 @@ define([
         };
     }
 
-    return function(url, params, method, dataType) {
+
+    var asyncRequest = function(url, params, method, dataType) {
         var t = (method || 'get').toLowerCase(),
             dataType = dataType || 'json',
             data = t === 'get' ? params: JSON.stringify(params || {}),
@@ -44,5 +43,10 @@ define([
             }
         }).promise();
     };
-});
 
+    if (typeof define === 'function' && define.amd) {
+        define('async_request', ['jquery'], function() {
+            return asyncRequest;
+        });
+    }
+})();
