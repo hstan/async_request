@@ -9,7 +9,7 @@
   "license": "MIT",
   "homepage": "http://github.com/hstan/async_request",
   "dependencies": {
-    "jquery": "~2.1.1"
+    "jquery": "~2.0"
   },
   "ignore": [
     "**/.*",
